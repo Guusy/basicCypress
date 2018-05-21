@@ -24,7 +24,7 @@ describe('form submit', () => {
 
         cy.get('.todo-list li').should('have.length', 5)
     })
-    it.only('show an error mesage for failed form submit', () => {
+    it('show an error mesage for failed form submit', () => {
         const newTodo = 'Test'
         cy.server()
         cy.route({
