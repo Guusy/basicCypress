@@ -1,6 +1,6 @@
 describe('List Item behavior',()=>{
 
-    it.only('Deletes an item',()=>{
+    it('Deletes an item',()=>{
         cy.server()
         cy.route({
             method:'DELETE',

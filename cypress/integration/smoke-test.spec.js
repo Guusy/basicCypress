@@ -35,7 +35,7 @@ describe('Smoke Tests',()=>{
             cy.wait('@load')
         })
 
-        it.only('Delete todos',()=>{
+        it('Delete todos',()=>{
             cy.route('DELETE','/api/todos/*').as('delete')
             cy.get('.todo-list li').each(element =>{
                 cy.wrap(element)

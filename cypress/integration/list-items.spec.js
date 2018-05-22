@@ -1,6 +1,6 @@
 describe('asdasd',()=>{
 
-    it.only('Marks an item complete', () => {
+    it('Marks an item complete', () => {
         cy.server()
         cy.seedAndVisit('fixture:todos')
 
